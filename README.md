@@ -12,6 +12,9 @@ cd <projectName>
 ## Add Storybook:
 npx sb init
 ## Mod package.json
++   "main": "dist/index.js",
++   "module": "dist/index.es.js",
+
 +   "devDependencies": {
         "react": "^18.1.0",
         "react-dom": "^18.1.0"
