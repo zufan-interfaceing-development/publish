@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
-    "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook"
+    "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook",
+    "build-lib": "export SET NODE_OPTIONS=--openssl-legacy-provider && rollup -c"
   },
   "keywords": [
     "React",
@@ -16,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.12",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "@storybook/addon-actions": "^6.5.0",
     "@storybook/addon-essentials": "^6.5.0",
     "@storybook/addon-interactions": "^6.5.0",
@@ -26,11 +28,17 @@
     "@storybook/testing-library": "^0.0.11",
     "babel-loader": "^8.2.5",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "rollup": "^2.73.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
   },
   "peerDependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/preset-react": "^7.17.12"
+  }
 }

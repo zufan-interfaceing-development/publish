@@ -19,8 +19,19 @@ npx sb init
 +   "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
-        "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook"
+        "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook",
+        "build-lib": "export SET NODE_OPTIONS=--openssl-legacy-provider && rollup -c"
     },
 
 
 
+npm install rollup rollup-plugin-babel @rollup/plugin-node-resolve rollup-plugin-peer-deps-external --save-dev
+
+npm install @babel/preset-react
+npm install rollup-plugin-postcss --save-dev
+
+touch rollup.config.js
+
+# To Build
+npm run build-lib
+It should create a dist folder
