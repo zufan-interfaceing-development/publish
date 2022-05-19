@@ -19,13 +19,7 @@ npx sb init
         "react": "^18.1.0",
         "react-dom": "^18.1.0"
     }
-<<<<<<< HEAD
-## Add Storybook:
-npx sb init
-+   "scripts": { 
-=======
 +   "scripts": {
->>>>>>> npmPublish
         "test": "echo \"Error: no test specified\" && exit 1",
         "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
         "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook",
