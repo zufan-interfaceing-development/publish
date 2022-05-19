@@ -9,14 +9,13 @@ cd <projectName>
         mkdir component
         cd component
             touch index.js
-
+## Add Storybook:
+npx sb init
 ## Mod package.json
 +   "devDependencies": {
         "react": "^18.1.0",
         "react-dom": "^18.1.0"
     }
-## Add Storybook:
-npx sb init
 +   "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
