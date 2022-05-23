@@ -1,40 +1,20 @@
-# File Structure
+# Publish On Npm
 
-mkdir <projectName>
-cd <projectName>
-    npm init
-    npm install react react-dom --save-dev
-    mkdir src
-    cd src
-        mkdir component
-        cd component
-            touch index.js
-## Add Storybook:
-npx sb init
-## Mod package.json
-+   "main": "dist/index.js",
-+   "module": "dist/index.es.js",
+### This Package is meant to make publishing react projects on NPM lot easer. This package uses the following packages
+* Storybook.js
+    * [Storybook](https://storybook.js.org/) provides you with isolated environment thats capable of HMR (hot module replacement).
+* Rollup.js
+    * [Rollup.js](https://www.rollupjs.org/) compiles small pieces of code into something larger and more complex, such as a library or application.
 
-+   "devDependencies": {
-        "react": "^18.1.0",
-        "react-dom": "^18.1.0"
-    }
-+   "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
-        "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook",
-        "build-lib": "export SET NODE_OPTIONS=--openssl-legacy-provider && rollup -c"
-    },
+## Package Use
+1. First clone this repo
+*   `clone git@github.com:zufan-interfaceing-development/publishfilestructure.git`
+2. Create your Component. 
+*       In the `src/components` create new folder. Then in same directory (`src/components/yourNewFolder`) create new file, `your-component.js`. In this file you will need to create your components.
 
+3. Then in same directory (`src/components/yourNewFolder`) create an index.js page that exports your components from `src/components/yourNewFolder/your-component.js.`.
 
+4. In the `src/index.js`, add an `export {Your-component} from './components/example'`
 
-npm install rollup rollup-plugin-babel @rollup/plugin-node-resolve rollup-plugin-peer-deps-external --save-dev
+5. Finally `npm run build-lib`. Then `npm publish`.
 
-npm install @babel/preset-react
-npm install rollup-plugin-postcss --save-dev
-
-touch rollup.config.js
-
-# To Build
-npm run build-lib
-It should create a dist folder

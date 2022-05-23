@@ -1,14 +1,13 @@
 {
-  "name": "portexe",
-  "version": "1.0.0",
-  "description": "TrialLib",
+  "name": "@zufan/publisher",
+  "version": "1.1.1",
+  "description": "This package is meant to make publishing on NPM easer",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
     "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook",
-    "build-lib": "export SET NODE_OPTIONS=--openssl-legacy-provider && rollup -c"
+    "build-lib": "rollup -c"
   },
   "keywords": [
     "React",
@@ -33,13 +32,12 @@
     "rollup": "^2.73.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.2"
+    "rollup-plugin-postcss": "^4.0.2",
+    "@babel/preset-react": "^7.17.12"
   },
   "peerDependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
-  "dependencies": {
-    "@babel/preset-react": "^7.17.12"
-  }
+  "dependencies": {}
 }
