@@ -8,13 +8,14 @@
 
 ## Package Use
 1. First clone this repo
-*   `clone git@github.com:zufan-interfaceing-development/publishfilestructure.git`
+    *       `clone git@github.com:zufan-interfaceing-development/publishfilestructure.git`
 2. Create your Component. 
-*       In the `src/components` create new folder. Then in same directory (`src/components/yourNewFolder`) create new file, `your-component.js`. In this file you will need to create your components.
+    * In the `src/components` create new folder. Then in same directory (`src/components/yourNewFolder`) create new file, `your-component.js`. In this file you will need to create your components.
 
 3. Then in same directory (`src/components/yourNewFolder`) create an index.js page that exports your components from `src/components/yourNewFolder/your-component.js.`.
 
 4. In the `src/index.js`, add an `export {Your-component} from './components/example'`
 
-5. Finally `npm run build-lib`. Then `npm publish`.
+5. Finally `npm run build-lib`. 
+Then `npm publish`.
 
