@@ -19,3 +19,9 @@
 5. Finally `npm run build-lib`. 
 Then `npm publish`.
 
+## Or 
+
+### Clone this repo 
+*       clone git@github.com:zufan-interfaceing-development/publish.git
+### Then Run 
+*       npm run add-component
