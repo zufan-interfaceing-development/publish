@@ -7,7 +7,8 @@
   "scripts": {
     "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
     "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook",
-    "build-lib": "rollup -c"
+    "build-lib": "rollup -c",
+    "git": "sh ./pushToGit.sh"
   },
   "keywords": [
     "React",
