@@ -1,5 +1,8 @@
-*.txt
-*.sh
-node_modules
+* .txt
+* .sh
+/node_modules
 
 node_modules/
+
+node_modules
+

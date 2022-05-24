@@ -25,3 +25,4 @@ npx sb init
 "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
 "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook"
 
+rm-rf node_modules
