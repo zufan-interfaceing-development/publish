@@ -4,3 +4,4 @@ pushToGit.sh
 node_modules
 
 /node_modules
+create-component.sh

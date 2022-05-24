@@ -3,4 +3,4 @@
  * The index.js file in ./components/example exports the Components specified in the export statement for publishing purpose
 */
 
-export * from './components/example'
+export * from './components/example';
